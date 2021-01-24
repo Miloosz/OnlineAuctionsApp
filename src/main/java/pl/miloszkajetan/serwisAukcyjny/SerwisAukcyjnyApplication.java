@@ -9,5 +9,8 @@ public class SerwisAukcyjnyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SerwisAukcyjnyApplication.class, args);
 	}
-
+//
+	/// //
+	 ///
+	//
 }
