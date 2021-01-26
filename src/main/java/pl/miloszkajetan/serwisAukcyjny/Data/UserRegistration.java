@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
+import java.time.LocalDate;
 
 
 @Getter
@@ -34,19 +35,19 @@ public class UserRegistration {
     private String password;
     @Pattern(regexp = "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$")
     private String email;
-    @Pattern(regexp = "\\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"  )
+    @NotEmpty
     private String firstName;
-    @Pattern(regexp = "\\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"  )
+    @NotEmpty
     private String lastName;
-    @Pattern( regexp = "[0-9]{2}[0-9]{2}[0-9]{4}") //potrzebny kalendarz, błędy np. 0 dzień urodzenia, 0 dzień miesiaca, 1000 rok urodzenia. DO POPRAWY!
-    private String birthdate;
-    @Pattern(regexp = "\\b([A-zÀ-ÿ][-,a-z])+"   )
+    @NotEmpty //W przyszłości dodać kalendarz z możliwością wyboru daty.
+    private LocalDate birthdate;
+    @NotEmpty
     private String province;
-    @Pattern(regexp = "\\b([A-ZÀ-ÿ][-,a-z])+"  )
+    @NotEmpty
     private String city;
-    @Pattern(regexp = "^[#.0-9a-zA-Z\\s,-/]+$")
+    @NotEmpty
     private String address;
-    @Pattern(regexp = "[0-9]{2}-[0-9]{3}\n")
+    @NotEmpty
     private String zipcode;
 
 
