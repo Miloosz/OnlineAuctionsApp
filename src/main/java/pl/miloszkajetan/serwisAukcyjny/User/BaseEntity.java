@@ -1,4 +1,4 @@
-package pl.miloszkajetan.serwisAukcyjny.Data;
+package pl.miloszkajetan.serwisAukcyjny.User;
 
 import lombok.Getter;
 import lombok.Setter;
