@@ -18,7 +18,4 @@ public class Category extends BaseEntity {
     private Long categoryId;
     private String categoryName;
 
-
-
-
 }
