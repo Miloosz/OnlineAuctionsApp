@@ -1,4 +1,4 @@
-package pl.miloszkajetan.serwisAukcyjny.User;
+package pl.miloszkajetan.serwisAukcyjny.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 public class UserRegistrationService {
 
     @Autowired
-    private PasswordEncoder passwordEncoder; //pytanie 1
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private UserRoleRepository userRoleRepository;
 
     @Autowired
-    private UsersRepository<User> usersRepository; //pytanie 2
+    private UsersRepository usersRepository; //dzieki Olek działa!!!
 
     public void registerFunction (UserRegistration userRegistration) {
 

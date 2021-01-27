@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 
-public class SerwisAukcyjnyApplication {
+public class OnlineAuctionServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SerwisAukcyjnyApplication.class, args);
+		SpringApplication.run(OnlineAuctionServiceApplication.class, args);
 	}
 
 }

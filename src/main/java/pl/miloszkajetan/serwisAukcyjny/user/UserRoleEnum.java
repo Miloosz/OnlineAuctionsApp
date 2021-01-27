@@ -1,4 +1,4 @@
-package pl.miloszkajetan.serwisAukcyjny.User;
+package pl.miloszkajetan.serwisAukcyjny.user;
 
 import lombok.Getter;
 
