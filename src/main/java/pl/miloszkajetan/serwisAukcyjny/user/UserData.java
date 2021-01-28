@@ -1,12 +1,12 @@
-package pl.miloszkajetan.serwisAukcyjny.Data;
+package pl.miloszkajetan.serwisAukcyjny.user;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 @Getter
 @Setter
 @Entity
+
 public class UserData extends BaseEntity {
 
     private String firstName;
