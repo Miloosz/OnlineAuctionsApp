@@ -1,9 +1,6 @@
 package pl.miloszkajetan.serwisAukcyjny.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
@@ -11,6 +8,7 @@ import javax.persistence.OneToOne;
 @Getter
 @Setter
 @Entity
+@Builder
 
 public class User extends BaseEntity {
 
