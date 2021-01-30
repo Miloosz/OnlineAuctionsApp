@@ -11,10 +11,11 @@ import javax.persistence.OneToOne;
 @Entity
 
 public class User extends BaseEntity {
-
     private String login;
     private String password;
     private String accountName;
+    private String email;
+
     @OneToOne
     private UserData userData;
 
