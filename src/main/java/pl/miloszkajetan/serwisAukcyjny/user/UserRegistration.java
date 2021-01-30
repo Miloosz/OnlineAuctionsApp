@@ -12,28 +12,12 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class UserRegistration {
-
-
-    /*
-
-    private String login;
-    private String password;
-    private String email;
-    private String firstName;
-    private String lastName;
-    private String birthdate;
-    private String province; // do wyboru z x podanych w liscie.
-    private String city;
-    private String address;
-    private String zip-code;
-
-
-     */
     @NotEmpty
     private String login;
     @NotEmpty
     private String password;
-    @Pattern(regexp = "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$")
+    //@Pattern(regexp = "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$")
+    @NotEmpty
     private String email;
     @NotEmpty
     private String firstName;
@@ -42,7 +26,7 @@ public class UserRegistration {
     @NotEmpty //W przyszłości dodać kalendarz z możliwością wyboru daty.
     private LocalDate birthdate;
     @NotEmpty
-    private String province;
+    private long phoneNumber;
     @NotEmpty
     private String city;
     @NotEmpty

@@ -1,6 +1,7 @@
 package pl.miloszkajetan.serwisAukcyjny;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,9 +11,12 @@ import pl.miloszkajetan.serwisAukcyjny.user.UserRegistrationService;
 
 @Controller
 public class MainController {
+    private UserRegistrationService userRegistrationService;
 
     @Autowired
-    private UserRegistrationService userRegistrationService;
+    public MainController(UserRegistrationService userRegistrationService) {
+        this.userRegistrationService = userRegistrationService;
+    }
 
     @GetMapping("/")
     public String home() {
