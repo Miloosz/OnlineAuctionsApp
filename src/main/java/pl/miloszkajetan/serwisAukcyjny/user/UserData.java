@@ -1,7 +1,6 @@
-package pl.miloszkajetan.serwisAukcyjny.Data;
+package pl.miloszkajetan.serwisAukcyjny.user;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import java.time.LocalDate;
@@ -9,6 +8,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
+
 public class UserData extends BaseEntity {
 
     private String firstName;
