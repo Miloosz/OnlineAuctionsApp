@@ -11,5 +11,6 @@ public enum CategoryEnum {
     COMPUTER,
     COMPUTER_ACCESSORIES,
     TOYS,
-    PET_ACCESSORIES;
+    PET_ACCESSORIES,
+    TOOLS;
 }

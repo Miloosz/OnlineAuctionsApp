@@ -1,15 +1,11 @@
 package pl.miloszkajetan.serwisAukcyjny.item;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import pl.miloszkajetan.serwisAukcyjny.categories.CategoryEnum;
 import pl.miloszkajetan.serwisAukcyjny.user.BaseEntity;
+import pl.miloszkajetan.serwisAukcyjny.user.User;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -18,14 +14,17 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Builder
 public class Item extends BaseEntity {
     private String itemName;
-    private String seller; //Czy tutaj łaczyc z User ze dany uzytkonik dodal item na sprzedaz czy gdzies indziej
+    @ManyToOne
+    private User user;
     private BigDecimal price;
     private LocalDate lifeOfItem;
     private LocalDate createdAuction;
-
+    private String description;
     @Enumerated(EnumType.STRING)
     private CategoryEnum category;
+
 
 }

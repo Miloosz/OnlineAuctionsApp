@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import pl.miloszkajetan.serwisAukcyjny.categories.CategoryRepository;
 import pl.miloszkajetan.serwisAukcyjny.user.UsersRepository;
 
+
 @Service
 public class ItemService {
     private ItemRepository itemRepository;
@@ -19,19 +20,23 @@ public class ItemService {
     }
 
 
-    public void addItem() {
+    private void addItem(Item item) {
+
+        itemRepository.save(item);                                           // Czy tak może być?
 
     }
 
-    public void deleteItem() {
+    private void deleteItem(Item item) {
+        itemRepository.delete(item);
 
     }
 
-    public void editItem() {
+    private void editItem(Item item) {
+
 
     }
 
-    public void searchItem() {
+    private void searchItem() {
 
     }
 }
