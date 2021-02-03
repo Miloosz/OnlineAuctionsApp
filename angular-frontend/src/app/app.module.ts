@@ -11,6 +11,10 @@ import { CategoryComponent } from './category/category.component';
 import { AdvertismentsComponent } from './advertisments/advertisments.component';
 import { ContactComponent } from './contact/contact.component';
 import { ItemsComponent } from './items/items.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {AppRoutingModule} from "./app-routing.module";
+
+
 
 @NgModule({
   declarations: [
@@ -23,12 +27,15 @@ import { ItemsComponent } from './items/items.component';
     CategoryComponent,
     AdvertismentsComponent,
     ContactComponent,
-    ItemsComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+    ItemsComponent,
+      ],
+    imports: [
+        BrowserModule,
+        MatGridListModule,
+        AppRoutingModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export const routingComponents = [HomeComponent, CategoryComponent]

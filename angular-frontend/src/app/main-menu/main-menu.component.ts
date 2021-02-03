@@ -12,4 +12,7 @@ export class MainMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  categories: string[] = ['Elektronika', "Moda", 'Dom i ogród', 'Supermarket', 'Dziecko', 'Uroda', 'Zdrowie', 'Kultura i rozrywka', 'Sport i turystyka', 'Motoryzacja', 'Nieruchomości'];
+  typesOfAuctions: string[] = ['Ostatnio dodane', "Wystawione przez Ciebie", "Licytowane przez Ciebie", "Obserwowane", 'Zakończone'];
+
 }
