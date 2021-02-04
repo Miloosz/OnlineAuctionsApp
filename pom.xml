@@ -80,7 +80,7 @@
 				</executions>
 				<configuration>
 					<executable>ng</executable>
-					<workingDirectory>onlineShopAngular</workingDirectory>
+					<workingDirectory>angular-frontend</workingDirectory>
 					<arguments>
 						<argument>build</argument>
 					</arguments>
