@@ -13,8 +13,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ItemsComponent } from './items/items.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {AppRoutingModule} from "./app-routing.module";
-
-
+import { RegistrationComponent } from './registration/registration.component';
+import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {faHome as fasHome, faSignInAlt as fasSign, faRegistered as fasRegistered, faBook as fasBook, faHammer as fasHammer, faAddressCard as fasAddressCard, faCartArrowDown as fasCartArrowDown} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook as fabFacebook, faTwitter as fabTwitter, faInstagram as fabInstagram } from "@fortawesome/free-brands-svg-icons";
 
 @NgModule({
   declarations: [
@@ -28,14 +30,20 @@ import {AppRoutingModule} from "./app-routing.module";
     AdvertismentsComponent,
     ContactComponent,
     ItemsComponent,
+    RegistrationComponent,
       ],
     imports: [
         BrowserModule,
         MatGridListModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-export const routingComponents = [HomeComponent, CategoryComponent]
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(fasHome, fasSign, fasRegistered, fasBook, fasHammer, fasAddressCard, fasCartArrowDown, fabFacebook, fabTwitter, fabInstagram)
+
+  }
+}

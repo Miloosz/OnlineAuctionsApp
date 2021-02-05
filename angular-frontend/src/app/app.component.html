@@ -1,12 +1,46 @@
-<div style="text-align:center">
-<h1>
-  Routing and Navigation
-</h1>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Auctions</title>
+  <script src="https://kit.fontawesome.com/fcf6b62366.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>Online Auctions</h2>
+    <nav>
+      <ul>
+      <li><a routerLink="/home" routerLinkActive=""><fa-icon [icon] = "['fas', 'home']"></fa-icon> Home</a></li>
+      <li><a routerLink="/login" routerLinkActive=""><fa-icon [icon] = "['fas', 'sign-in-alt']"></fa-icon> Login</a></li>
+      <li><a routerLink="/register" routerLinkActive=""><fa-icon [icon]="['fas', 'registered']"></fa-icon> Register</a></li>
+      <li><a routerLink="/category" routerLinkActive=""><fa-icon [icon]="['fas', 'book']"></fa-icon> Category</a></li>
+      <li><a routerLink="/items" routerLinkActive=""><fa-icon [icon]="['fas', 'hammer']"></fa-icon> Items</a></li>
+      <li><a routerLink="/contact" routerLinkActive=""><fa-icon [icon]="['fas', 'address-card']"></fa-icon> Contact</a></li>
+      <li><a routerLink="/cart" routerLinkActive=""><fa-icon [icon]="['fas', 'cart-arrow-down']"></fa-icon> Cart</a></li>
+      </ul>
+    </nav>
+
+      <div class = "social_media">
+        <a href="#"><fa-icon [icon]="['fab', 'facebook']"></fa-icon></a>
+        <a href="#"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+        <a href="#"><fa-icon [icon]="['fab', 'instagram']"></fa-icon></a>
+      </div>
+
+
+  </div>
+  <div class="main_content">
+    <div class="header">Witam, dzień dobry</div>
+    <div class="info">
+      <div>siema siema, witam wariaty na aukcji</div>
+    </div>
+  </div>
 </div>
-<nav>
-  <a routerLink="/home" routerLinkActive="">Home</a>
-  <a routerLink="/category" routerLinkActive="">Category</a>
-  <a routerLink="/contact" routerLinkActive="">Contact</a>
-</nav>
+
+</body>
+
 
 <router-outlet></router-outlet>
+</html>
