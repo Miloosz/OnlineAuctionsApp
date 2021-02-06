@@ -9,15 +9,12 @@ public class ItemBuilder {
     public static Item item() {
         Item.builder()
                 .itemName(item().getItemName())
-                .user(item().getUser())             //Czy tak powinnien wygladc builder itemu z uzytkownikiem
+                .user(item().getUser())
                 .price(item().getPrice())
                 .category(item().getCategory())
-                .lifeOfItem(item().getLifeOfItem())
-                .createdAuction(LocalDate.now())
                 .description(item().getDescription())
+                .imgURL(item().getImgURL())
                 .build();
-
-
         return null;
     }
 }

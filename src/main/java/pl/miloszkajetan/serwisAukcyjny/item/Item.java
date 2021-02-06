@@ -7,7 +7,6 @@ import pl.miloszkajetan.serwisAukcyjny.user.User;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -20,11 +19,8 @@ public class Item extends BaseEntity {
     @ManyToOne
     private User user;
     private BigDecimal price;
-    private LocalDate lifeOfItem;
-    private LocalDate createdAuction;
     private String description;
+    private String imgURL;
     @Enumerated(EnumType.STRING)
     private CategoryEnum category;
-
-
 }

@@ -24,7 +24,6 @@ public class User extends BaseEntity {
     private String address;
     private String accountStatus;
     private String accountType;
-
     @Enumerated(EnumType.STRING)
     private UserRoleEnum userRole;
 
