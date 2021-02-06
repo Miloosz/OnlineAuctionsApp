@@ -10,8 +10,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CategoryStatus {
-
     boolean opened;
     boolean closed;
-
 }

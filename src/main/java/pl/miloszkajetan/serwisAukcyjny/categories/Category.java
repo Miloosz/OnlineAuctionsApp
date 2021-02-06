@@ -15,7 +15,6 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 public class Category extends BaseEntity {
 
-    private Long categoryId;
     private String categoryName;
 
 }

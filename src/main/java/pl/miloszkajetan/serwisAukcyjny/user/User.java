@@ -1,24 +1,31 @@
 package pl.miloszkajetan.serwisAukcyjny.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Getter
 @Setter
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class User extends BaseEntity {
-
     private String login;
     private String password;
-    private String accountName;
-    @OneToOne
-    private UserData userData;
+    private String email;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private long phoneNumber;
+    private String city;
+    private String address;
+    private String accountStatus;
+    private String accountType;
 
+    @Enumerated(EnumType.STRING)
+    private UserRoleEnum userRole;
 
 }

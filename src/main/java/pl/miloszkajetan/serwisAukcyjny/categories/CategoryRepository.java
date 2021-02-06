@@ -7,16 +7,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface CategoryRepository extends JpaRepository <Category, Long> {
-
-
-    Optional<Category> findByCategoryName (String categoryName);
-
-    default List<Category> getCategories(){
-        
-        return findAll();
-    }
-
-
-
+public interface CategoryRepository extends JpaRepository<Category, Long> {
+    Optional<Category> findByCategory(String categoryName);
 }
