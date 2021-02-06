@@ -18,6 +18,10 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { CartItemComponent } from './shopping-cart/cart-item/cart-item.component';
 
 
+import { RegistrationComponent } from './registration/registration.component';
+import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {faHome as fasHome, faSignInAlt as fasSign, faRegistered as fasRegistered, faBook as fasBook, faHammer as fasHammer, faAddressCard as fasAddressCard, faCartArrowDown as fasCartArrowDown} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook as fabFacebook, faTwitter as fabTwitter, faInstagram as fabInstagram } from "@fortawesome/free-brands-svg-icons";
 
 @NgModule({
   declarations: [
@@ -31,6 +35,7 @@ import { CartItemComponent } from './shopping-cart/cart-item/cart-item.component
     AdvertismentsComponent,
     ContactComponent,
     ItemsComponent,
+    RegistrationComponent,
     ProductItemComponent,
     ProductListComponent,
     CartItemComponent,
@@ -38,10 +43,15 @@ import { CartItemComponent } from './shopping-cart/cart-item/cart-item.component
     imports: [
         BrowserModule,
         MatGridListModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-export const routingComponents = [HomeComponent, CategoryComponent]
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(fasHome, fasSign, fasRegistered, fasBook, fasHammer, fasAddressCard, fasCartArrowDown, fabFacebook, fabTwitter, fabInstagram)
+
+  }
+}

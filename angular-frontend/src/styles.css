@@ -1,4 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #f3f5f9;
+  margin: 0px;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0;
+}
+
 
 html, body {
   height: 100%;
