@@ -18,7 +18,8 @@ public class ItemService {
     }
 
     public Item addItem(ItemDTO itemDTO) {
-        Item item = Item.builder().itemName(itemDTO.getItemName())
+        Item item = Item.builder()
+                .itemName(itemDTO.getItemName())
                 .user(usersRepository.getOne(itemDTO.getUserId()))
                 .price(itemDTO.getPrice())
                 .category(itemDTO.getCategory())

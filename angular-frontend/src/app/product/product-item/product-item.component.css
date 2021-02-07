@@ -1,0 +1,7 @@
+.text-info {
+  width: 100px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
