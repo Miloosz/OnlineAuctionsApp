@@ -1,5 +1,6 @@
 package pl.miloszkajetan.serwisAukcyjny.item;
 
+import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.miloszkajetan.serwisAukcyjny.categories.CategoryRepository;
@@ -19,24 +20,29 @@ public class ItemService {
         this.categoryRepository = categoryRepository;
     }
 
-
-    private void addItem(Item item) {
-
-        itemRepository.save(item);                                           // Czy tak może być?
-
+    public Item addItem(ItemDTO itemDTO) {
+        Item item = Item.builder().itemName(itemDTO.getItemName())
+                .user(usersRepository.getOne(itemDTO.getUserId()))
+                .price(itemDTO.getPrice())
+                .category(itemDTO.getCategory())
+                .description(itemDTO.getDescription())
+                .imgURL(itemDTO.getImgURL())
+                .build();
+        itemRepository.save(item);
+        return item;
     }
 
-    private void deleteItem(Item item) {
+    public void deleteItem(Item item) {
         itemRepository.delete(item);
 
     }
 
-    private void editItem(Item item) {
+    public void editItem(Item item) {
 
 
     }
 
-    private void searchItem() {
+    public void searchItem() {
 
     }
 }
