@@ -1,26 +1,62 @@
-<div class="container">
-  <form id="contact" action="" method="post">
-    <h3>Quick Contact</h3>
-    <h4>Contact us today, and get reply with in 24 hours!</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Kontakt</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <form class="item" action="" method="post">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="itemName" class="form-label">Imie</label>
+          <input type="text" class="form-control" id="itemName" placeholder="Wprowadz imie" value="" required
+                 autofocus>
+          <div class="invalid-feedback">
+            Uzupelnij pole
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="email" class="form-label">E-mail</label>
+          <div class="input-group">
+            <input type="email" class="form-control" id="email" placeholder="E-mail" value="" required>
+            <div class="invalid-feedback">
+              Wprowadz adres e-mail
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="description" class="form-label">Opisz swoj problem</label>
+          <textarea type="text" class="form-control" id="description" placeholder="Opis..." rows="10"
+                    required></textarea>
+          <div class="invalid-feedback">
+            Opisz swoj problem
+          </div>
+        </div>
 
 
-</div>
+
+
+      </div>
+      <button class="w-100 btn btn-primary btn-lg" type="submit">Prosze o kontakt</button>
+    </form>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
