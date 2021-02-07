@@ -19,12 +19,11 @@ public class User extends BaseEntity {
     private String firstName;
     private String lastName;
     private int age;
-    private long phoneNumber;
+    private String phoneNumber;
     private String city;
     private String address;
     private String accountStatus;
     private String accountType;
-
     @Enumerated(EnumType.STRING)
     private UserRoleEnum userRole;
 

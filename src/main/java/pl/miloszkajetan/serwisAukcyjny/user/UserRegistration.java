@@ -26,7 +26,7 @@ public class UserRegistration {
     @NotEmpty //W przyszłości dodać kalendarz z możliwością wyboru daty.
     private LocalDate birthdate;
     @NotEmpty
-    private long phoneNumber;
+    private String phoneNumber;
     @NotEmpty
     private String city;
     @NotEmpty
