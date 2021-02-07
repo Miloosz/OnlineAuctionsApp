@@ -1,4 +1,4 @@
-package pl.miloszkajetan.serwisAukcyjny.categories;
+package pl.miloszkajetan.serwisAukcyjny.item;
 
 import lombok.Getter;
 

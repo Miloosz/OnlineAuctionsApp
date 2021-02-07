@@ -1,9 +1,7 @@
 package pl.miloszkajetan.serwisAukcyjny.item;
 
-import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.miloszkajetan.serwisAukcyjny.categories.CategoryRepository;
 import pl.miloszkajetan.serwisAukcyjny.user.UsersRepository;
 
 
@@ -11,13 +9,12 @@ import pl.miloszkajetan.serwisAukcyjny.user.UsersRepository;
 public class ItemService {
     private ItemRepository itemRepository;
     private UsersRepository usersRepository;
-    private CategoryRepository categoryRepository;
+
 
     @Autowired
-    public ItemService(ItemRepository itemRepository, UsersRepository usersRepository, CategoryRepository categoryRepository) {
+    public ItemService(ItemRepository itemRepository, UsersRepository usersRepository) {
         this.itemRepository = itemRepository;
         this.usersRepository = usersRepository;
-        this.categoryRepository = categoryRepository;
     }
 
     public Item addItem(ItemDTO itemDTO) {

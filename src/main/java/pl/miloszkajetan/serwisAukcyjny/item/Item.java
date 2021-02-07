@@ -1,7 +1,6 @@
 package pl.miloszkajetan.serwisAukcyjny.item;
 
 import lombok.*;
-import pl.miloszkajetan.serwisAukcyjny.categories.CategoryEnum;
 import pl.miloszkajetan.serwisAukcyjny.user.BaseEntity;
 import pl.miloszkajetan.serwisAukcyjny.user.User;
 
