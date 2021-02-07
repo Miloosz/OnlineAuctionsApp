@@ -17,15 +17,9 @@ public class ItemController {
 
     @PostMapping("/items")
     public ResponseEntity<Void> addItemToService(@RequestBody ItemDTO itemDTO) throws URISyntaxException {
-    Item itemId = itemService.addItem(itemDTO);
-    return ResponseEntity.
-            created(new URI("/items"+ itemId.getId()))
-            .build();
+        Item itemId = itemService.addItem(itemDTO);
+        return ResponseEntity.
+                created(new URI("/items" + itemId.getId()))
+                .build();
     }
-//@GetMapping("/items")
-//    public ResponseEntity<Void> getAllItems(@RequestParam(required = false)String itemName){
-//        if(itemName == null || itemName.isEmpty()){
-//            return itemService.getAllItems
-//        }
-//}
 }
