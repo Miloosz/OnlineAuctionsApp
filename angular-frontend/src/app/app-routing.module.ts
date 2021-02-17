@@ -7,6 +7,7 @@ import {ItemsComponent} from "./items/items.component";
 import {CartComponent} from "./shopping-cart/cart/cart.component";
 import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
+import {BrowserComponent} from "./browser/browser.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'items', component: ItemsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegistrationComponent }  ];
+  { path: 'register', component: RegistrationComponent },
+  { path: 'search', component: BrowserComponent }  ];
 
 
 
@@ -25,4 +27,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, CategoryComponent, ContactComponent, ItemsComponent, CartComponent, LoginComponent, RegistrationComponent]
+export const routingComponents = [HomeComponent, CategoryComponent, ContactComponent, ItemsComponent, CartComponent, LoginComponent, RegistrationComponent, BrowserComponent]

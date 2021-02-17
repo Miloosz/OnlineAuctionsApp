@@ -16,12 +16,14 @@ import {AppRoutingModule} from "./app-routing.module";
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { CartItemComponent } from './shopping-cart/cart-item/cart-item.component';
-
-
+import { BrowserComponent } from './browser/browser.component';
 import { RegistrationComponent } from './registration/registration.component';
+
+
 import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {faHome as fasHome, faSignInAlt as fasSign, faRegistered as fasRegistered, faBook as fasBook, faHammer as fasHammer, faAddressCard as fasAddressCard, faCartArrowDown as fasCartArrowDown} from '@fortawesome/free-solid-svg-icons';
+import {faHome as fasHome, faSignInAlt as fasSign, faRegistered as fasRegistered, faBook as fasBook, faHammer as fasHammer, faAddressCard as fasAddressCard, faCartArrowDown as fasCartArrowDown, faSearch as fasSearch, faChevronDown as fasChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook as fabFacebook, faTwitter as fabTwitter, faInstagram as fabInstagram } from "@fortawesome/free-brands-svg-icons";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -39,19 +41,21 @@ import { faFacebook as fabFacebook, faTwitter as fabTwitter, faInstagram as fabI
     ProductItemComponent,
     ProductListComponent,
     CartItemComponent,
+    BrowserComponent,
       ],
-    imports: [
-        BrowserModule,
-        MatGridListModule,
-        AppRoutingModule,
-        FontAwesomeModule
-    ],
+  imports: [
+    BrowserModule,
+    MatGridListModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasHome, fasSign, fasRegistered, fasBook, fasHammer, fasAddressCard, fasCartArrowDown, fabFacebook, fabTwitter, fabInstagram)
+    library.addIcons(fasHome, fasSign, fasRegistered, fasBook, fasHammer, fasAddressCard, fasCartArrowDown, fabFacebook, fabTwitter, fabInstagram, fasSearch, fasChevronDown)
 
   }
 }
