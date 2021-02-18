@@ -1,16 +1,36 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router, ParamMap} from "@angular/router";
 
 
 @Component({
   selector: 'app-category',
-  templateUrl: './category.component.html',
+  template: `
+
+  <p>
+    <button (click)="showElectronics()">Elektronika</button>
+  </p>
+  <router-outlet></router-outlet>
+  `,
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
 
-  constructor() { }
+  public categoryId;
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute, private router: Router) { }
+
+  ngOnInit() {
+
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      let id = parseInt(params.get('id'));
+      this.categoryId = id;
+      }
+    )
+
+  }
+
+  showElectronics(){
+    this.router.navigate(['Electronics'], { relativeTo: this.route}); //nawigacja nie działa
   }
 
 }

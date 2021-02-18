@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryNieruchomosciComponent } from './category-nieruchomosci.component';
+import { CategoryPropertyComponent } from './category-property.component';
 
 describe('CategoryNieruchomosciComponent', () => {
-  let component: CategoryNieruchomosciComponent;
-  let fixture: ComponentFixture<CategoryNieruchomosciComponent>;
+  let component: CategoryPropertyComponent;
+  let fixture: ComponentFixture<CategoryPropertyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CategoryNieruchomosciComponent ]
+      declarations: [ CategoryPropertyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CategoryNieruchomosciComponent);
+    fixture = TestBed.createComponent(CategoryPropertyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

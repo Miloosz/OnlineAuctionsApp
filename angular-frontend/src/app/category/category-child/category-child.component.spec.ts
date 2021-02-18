@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryUrodaComponent } from './category-uroda.component';
+import { CategoryChildComponent } from './category-child.component';
 
-describe('CategoryUrodaComponent', () => {
-  let component: CategoryUrodaComponent;
-  let fixture: ComponentFixture<CategoryUrodaComponent>;
+describe('CategoryDzieckoComponent', () => {
+  let component: CategoryChildComponent;
+  let fixture: ComponentFixture<CategoryChildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CategoryUrodaComponent ]
+      declarations: [ CategoryChildComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CategoryUrodaComponent);
+    fixture = TestBed.createComponent(CategoryChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

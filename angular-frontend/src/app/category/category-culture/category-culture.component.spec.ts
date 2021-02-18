@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategoryKulturaComponent } from './category-kultura.component';
+import { CategoryCultureComponent } from './category-culture.component';
 
 describe('CategoryKulturaComponent', () => {
-  let component: CategoryKulturaComponent;
-  let fixture: ComponentFixture<CategoryKulturaComponent>;
+  let component: CategoryCultureComponent;
+  let fixture: ComponentFixture<CategoryCultureComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CategoryKulturaComponent ]
+      declarations: [ CategoryCultureComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CategoryKulturaComponent);
+    fixture = TestBed.createComponent(CategoryCultureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
