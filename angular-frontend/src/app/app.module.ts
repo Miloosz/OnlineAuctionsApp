@@ -24,6 +24,17 @@ import {FaIconLibrary, FontAwesomeModule} from "@fortawesome/angular-fontawesome
 import {faHome as fasHome, faSignInAlt as fasSign, faRegistered as fasRegistered, faBook as fasBook, faHammer as fasHammer, faAddressCard as fasAddressCard, faCartArrowDown as fasCartArrowDown, faSearch as fasSearch, faChevronDown as fasChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook as fabFacebook, faTwitter as fabTwitter, faInstagram as fabInstagram } from "@fortawesome/free-brands-svg-icons";
 import {FormsModule} from "@angular/forms";
+import { CategoryElektronikaComponent } from './category/category-electronics/category-elektronika.component';
+import { CategoryModaComponent } from './category/category-fashion/category-moda.component';
+import { CategoryDomComponent } from './category/category-home/category-dom.component';
+import { CategorySupermarketComponent } from './category/category-supermarket/category-supermarket.component';
+import { CategoryDzieckoComponent } from './category/category-child/category-dziecko.component';
+import { CategoryUrodaComponent } from './category/category-beauty/category-uroda.component';
+import { CategoryZdrowieComponent } from './category/category-health/category-zdrowie.component';
+import { CategoryKulturaComponent } from './category/category-culture/category-kultura.component';
+import { CategorySportComponent } from './category/category-sport/category-sport.component';
+import { CategoryAutomotiveComponent } from './category/category-automotive/category-automotive.component';
+import { CategoryNieruchomosciComponent } from './category/category-property/category-nieruchomosci.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +53,17 @@ import {FormsModule} from "@angular/forms";
     ProductListComponent,
     CartItemComponent,
     BrowserComponent,
+    CategoryElektronikaComponent,
+    CategoryModaComponent,
+    CategoryDomComponent,
+    CategorySupermarketComponent,
+    CategoryDzieckoComponent,
+    CategoryUrodaComponent,
+    CategoryZdrowieComponent,
+    CategoryKulturaComponent,
+    CategorySportComponent,
+    CategoryAutomotiveComponent,
+    CategoryNieruchomosciComponent,
       ],
   imports: [
     BrowserModule,
