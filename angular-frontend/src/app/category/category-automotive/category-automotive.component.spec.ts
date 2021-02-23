@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CategoryAutomotiveComponent } from './category-automotive.component';
 
-describe('CategoryMotoryzacjaComponent', () => {
+describe('CategoryAutomotiveComponent', () => {
   let component: CategoryAutomotiveComponent;
   let fixture: ComponentFixture<CategoryAutomotiveComponent>;
 

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CategoryChildComponent } from './category-child.component';
 
-describe('CategoryDzieckoComponent', () => {
+describe('CategoryChildComponent', () => {
   let component: CategoryChildComponent;
   let fixture: ComponentFixture<CategoryChildComponent>;
 

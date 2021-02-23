@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-category-motoryzacja',
+  selector: 'app-category-automotive',
   templateUrl: './category-automotive.component.html',
   styleUrls: ['./category-automotive.component.css']
 })

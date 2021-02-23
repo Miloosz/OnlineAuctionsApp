@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-category-elektronika',
+  selector: 'app-category-electronics',
   templateUrl: './category-electronics.component.html',
   styleUrls: ['./category-electronics.component.css']
 })

@@ -1,1 +1,5 @@
-
+.wrapper{
+  display: flex;
+  position: relative;
+  margin-left: 200px;
+}

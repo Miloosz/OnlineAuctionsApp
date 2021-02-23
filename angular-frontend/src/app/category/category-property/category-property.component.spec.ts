@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CategoryPropertyComponent } from './category-property.component';
 
-describe('CategoryNieruchomosciComponent', () => {
+describe('CategoryPropertyComponent', () => {
   let component: CategoryPropertyComponent;
   let fixture: ComponentFixture<CategoryPropertyComponent>;
 

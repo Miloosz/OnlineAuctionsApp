@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CategoryElectronicsComponent } from './category-electronics.component';
 
-describe('CategoryElektronikaComponent', () => {
+describe('CategoryChildComponent', () => {
   let component: CategoryElectronicsComponent;
   let fixture: ComponentFixture<CategoryElectronicsComponent>;
 
